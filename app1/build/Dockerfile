@@ -1,6 +1,6 @@
 FROM composer:latest as build 
 WORKDIR /app 
-COPY . /app 
+COPY /src/laravel-8.6.5 /app
 RUN composer install
 
 FROM php:8.0-apache 
